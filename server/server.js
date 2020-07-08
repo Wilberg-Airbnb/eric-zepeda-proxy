@@ -3,8 +3,6 @@ const app = express();
 
 app.use('/:listingId', express.static('public'));
 
-app.use(express.static('public'));
-
 app.get('/', (req, res) => {
   res.send('Heres the proxy!');
 });
